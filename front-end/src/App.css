@@ -1,33 +1,103 @@
-.App {
-  text-align: center;
+html body {
+  height: 100%;
+  margin: auto;
+  overflow: hidden
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#mainContent {
+  width: 64em;
+  height: 33em;
+  position: absolute;
+  right: 62px;
+  top: 125px;
+  overflow-x:auto;
+  margin-top:15px;
 }
 
-.App-header {
-  background-color: #282c34;
+#cardBox {
+width:20em;
+margin-left: 50px;
+margin-top: 50px;
+float: left;
+}
+#companyCard {
+  width:30em;
+  margin-right: 50px;
+  margin-top: 50px;
+  float: right;
+}
+
+#topButton {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#contactCard {
+  width: 700px;
+
+}
+
+.websites {
+  overflow-x: auto
+}
+
+.main {
+  background: black;
   min-height: 100vh;
+  position: absolute;
+}
+
+.navbar {
+  width: 100vw;
+  height: 17vh;
+  background-color: #202020;
+  overflow: hidden;
+  position: relative;
+  border-bottom: .5px solid #565555
+}
+
+.sideBar {
+  height: 100vh;
+  width: 19vw;
+  margin-right: 10vw;
+  margin-top: -7vh;
+  margin-bottom: 20vh;
+  margin-left: 7vw;
+  background-color: #FF6633;
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 10px;
+}
+
+.buttons:hover {
+  background-color: gray
+}
+
+.buttons {
+  width:93%;
+  height: 30px;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons:visited {
+  text-decoration: none;
+  color: white
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#links {
+  color: #404040;
+  text-decoration: none
 }
+
+#links:visited {
+  color: #404040;
+  text-decoration: none
+}
+
+::-webkit-scrollbar { width: 0 !important }
